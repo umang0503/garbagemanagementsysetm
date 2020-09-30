@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:smartcity/admin_panel.dart';
-import 'package:smartcity/admindashboard.dart';
 import 'package:smartcity/adminmarker.dart';
 
 import 'package:smartcity/complain.dart';
