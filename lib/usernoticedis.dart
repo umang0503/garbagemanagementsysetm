@@ -35,8 +35,8 @@ class noticeitem extends StatelessWidget {
 
 
             children: <Widget>[
-            Text(name,style: TextStyle(fontSize: 17))
-              ,SizedBox(height:4),Text(location,style: TextStyle(fontSize: 17))
+            Text(name,style: GoogleFonts.robotoSlab(textStyle: TextStyle(fontWeight:FontWeight.bold,fontSize: 17)))
+              ,SizedBox(height:4),Text(location,style:GoogleFonts.robotoSlab( textStyle:TextStyle(fontWeight:FontWeight.bold,fontSize: 17)))
               ,SizedBox(height:2),SizedBox(height:4),RichText(maxLines: 3,
                 text: new TextSpan(
 
@@ -45,11 +45,11 @@ class noticeitem extends StatelessWidget {
                     color: Colors.black,
                   ),
                   children: <TextSpan>[
-                    new TextSpan(text: 'Subject :  ',style:TextStyle(color:Colors.deepPurpleAccent,fontWeight: FontWeight.bold,fontSize: 17)),
-                    new TextSpan(text: subject, style:TextStyle(fontSize: 16)),
+                    new TextSpan(text: 'Subject :  ',style:GoogleFonts.robotoSlab(textStyle:TextStyle(color:Colors.deepPurpleAccent,fontWeight: FontWeight.bold,fontSize: 17))),
+                    new TextSpan(text: subject, style:GoogleFonts.robotoSlab(textStyle:TextStyle(fontWeight:FontWeight.bold,fontSize: 16))),
                   ],
                 ),
-              ),SizedBox(height: 4,),Text(message,style:TextStyle(fontSize: 17)) ],),
+              ),SizedBox(height: 4,),Text(message,style:GoogleFonts.robotoSlab(textStyle:TextStyle(fontWeight:FontWeight.bold,fontSize: 17))) ],),
         )
 
     );

@@ -36,11 +36,11 @@ class _admindashboardState extends State<admindashboard> {
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
                   colors: <Color>[
-                    Colors.deepPurpleAccent,
-                    Colors.indigo[800]
+                    Colors.deepOrange,
+                    Colors.orange
                   ],
                 ),),
-          child: Center(child: Text('How Can We Help You',style:TextStyle(color: Colors.white,fontSize: 20)),
+          child: Center(child: Text('Hi Admin !!',style:TextStyle(color: Colors.white,fontSize: 20)),
           ),
             height:MediaQuery.of(context).size.height*0.35),),
       Positioned(top:MediaQuery.of(context).size.height*0.06,left:MediaQuery.of(context).size.width*0.86,child: IconButton(icon:Icon(Icons.power_settings_new,color: Colors.white,),onPressed: (){logout();},)),
@@ -74,7 +74,7 @@ class _admindashboardState extends State<admindashboard> {
                             ),
                             Text("Add Dustbin",
                                 style: TextStyle(
-                                    color: Colors.indigo[800], fontSize: 15,fontWeight: FontWeight.bold))
+                                    color: Colors.deepOrange, fontSize: 15,fontWeight: FontWeight.bold))
                           ],
                         )),
                   ),
@@ -95,7 +95,7 @@ class _admindashboardState extends State<admindashboard> {
                             ),
                             Text("Complain",
                                 style: TextStyle(
-                                    color: Colors.indigo[800], fontSize: 15,fontWeight: FontWeight.bold))
+                                    color: Colors.deepOrange, fontSize: 15,fontWeight: FontWeight.bold))
                           ],
                         )),
                   ),
@@ -116,7 +116,7 @@ class _admindashboardState extends State<admindashboard> {
                             ),
                             Text("Create Schedule",
                                 style: TextStyle(
-                                    color: Colors.indigo[800], fontSize: 15,fontWeight: FontWeight.bold))
+                                    color: Colors.deepOrange, fontSize: 15,fontWeight: FontWeight.bold))
                           ],
                         )),
                   ),
@@ -137,7 +137,7 @@ class _admindashboardState extends State<admindashboard> {
                             ),
                             Text("Create Notice",
                                 style: TextStyle(
-                                    color: Colors.indigo[800], fontSize: 15,fontWeight: FontWeight.bold))
+                                    color: Colors.deepOrange, fontSize: 15,fontWeight: FontWeight.bold))
                           ],
                         )),
                   ),

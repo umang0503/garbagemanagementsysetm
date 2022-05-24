@@ -13,8 +13,8 @@ class complainBuilder extends StatelessWidget {
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
             colors: <Color>[
-              Colors.deepPurpleAccent,
-              Colors.indigo[800]
+              Colors.deepOrange,
+              Colors.orange
             ],
           ),
         ),

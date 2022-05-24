@@ -36,8 +36,8 @@ class _noticeState extends State<notice> {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: <Color>[
-            Colors.deepPurpleAccent,
-            Colors.indigo[800]
+            Colors.deepOrange,
+            Colors.orange
           ],
         ),
       ),
@@ -53,7 +53,7 @@ class _noticeState extends State<notice> {
                 return RadialGradient(
                   center: Alignment.topLeft,
                   radius: 9.0,
-                  colors: <Color>[Colors.deepPurpleAccent, Colors.indigo[800]],
+                  colors: <Color>[Colors.deepOrange, Colors.orange],
                   tileMode: TileMode.mirror,
                 ).createShader(bounds);
               },
@@ -139,8 +139,8 @@ class _noticeState extends State<notice> {
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
                   colors: <Color>[
-                    Colors.deepPurpleAccent,
-                    Colors.indigo[800]
+                    Colors.deepOrange,
+                    Colors.orange
                   ],
                 ),
                     borderRadius: BorderRadius.all(Radius.circular(6))),

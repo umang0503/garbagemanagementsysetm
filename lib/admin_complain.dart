@@ -47,6 +47,7 @@ class complainitem extends StatelessWidget {
               GestureDetector(onTap: (){Navigator
                   .of(context)
                   .push(new MaterialPageRoute(builder: (BuildContext context) {
+
                 return complaingoogle(latitude: coordinate.latitude,longitude: coordinate.longitude,);
               }));},
                 child: Container(
@@ -73,7 +74,7 @@ class complainitem extends StatelessWidget {
                           color: Colors.black,
                         ),
                         children: <TextSpan>[
-                          new TextSpan(text: 'Name : ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
+                          new TextSpan(text: 'Name : ',style:TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
                           new TextSpan(text:  name, style: new TextStyle(fontSize: 16)),
                         ],
                       ),

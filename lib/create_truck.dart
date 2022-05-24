@@ -39,7 +39,7 @@ class _truckdetailState extends State<truckdetail> {
       context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime.now(),
-      lastDate: DateTime(2022),
+      lastDate: DateTime(2028),
     ).then((pickedDate) {
       if (pickedDate == null) {
         return;
@@ -75,8 +75,8 @@ class _truckdetailState extends State<truckdetail> {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: <Color>[
-            Colors.deepPurpleAccent,
-            Colors.indigo[800]
+            Colors.deepOrange,
+            Colors.orange
           ],
         ),
       ),
@@ -94,7 +94,7 @@ class _truckdetailState extends State<truckdetail> {
                   return RadialGradient(
                     center: Alignment.topLeft,
                     radius: 9.0,
-                    colors: <Color>[Colors.deepPurpleAccent, Colors.indigo[800]],
+                    colors: <Color>[Colors.deepOrange, Colors.orange],
                     tileMode: TileMode.mirror,
                   ).createShader(bounds);
                 },
@@ -162,17 +162,17 @@ class _truckdetailState extends State<truckdetail> {
               SizedBox(height: 30,),
              Row(mainAxisAlignment:MainAxisAlignment.spaceBetween,children: <Widget>[Row(
                children: <Widget>[
-                 Container(decoration: BoxDecoration(border: Border.all(color:Colors.indigo[800],width: 2),borderRadius: BorderRadius.circular(5),
+                 Container(decoration: BoxDecoration(border: Border.all(color:Colors.orange,width: 2),borderRadius: BorderRadius.circular(5),
                  ),child:Padding(
                    padding: const EdgeInsets.all(8.0),
                    child: Text(
                      _selectedDate == null
-                         ? 'No Date Chosen!'
+                         ? 'Date!'
                          : '${DateFormat.yMd().format(_selectedDate)}',
                    ),
                  ),),
         IconButton(
-          icon: Icon(Icons.calendar_today,color: Colors.indigo[800],),
+          icon: Icon(Icons.calendar_today,color: Colors.orange,),
           onPressed: () {
             _presentDatePicker() ;
           },
@@ -180,7 +180,7 @@ class _truckdetailState extends State<truckdetail> {
              ),
                Row(
                  children: <Widget>[
-                   Container(decoration: BoxDecoration(border: Border.all(color:Colors.indigo[800],width: 2),borderRadius: BorderRadius.circular(5),
+                   Container(decoration: BoxDecoration(border: Border.all(color:Colors.orange,width: 2),borderRadius: BorderRadius.circular(5),
                    ),child:Padding(
                      padding: const EdgeInsets.all(8.0),
                      child: Text(
@@ -190,7 +190,7 @@ class _truckdetailState extends State<truckdetail> {
                      ),
                    ),),
                    IconButton(
-                     icon: Icon(Icons.access_time,color:Colors.indigo[800]),
+                     icon: Icon(Icons.access_time,color:Colors.orange),
                      onPressed: () {
                        _presentTimePicker() ;
                      },
@@ -207,8 +207,8 @@ class _truckdetailState extends State<truckdetail> {
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
                     colors: <Color>[
-                      Colors.deepPurpleAccent,
-                      Colors.indigo[800]
+                      Colors.deepOrange,
+                      Colors.orange
                     ],
                   ),
               ),height:45,width:100,child: Center(child: Text("Submit",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),))),
